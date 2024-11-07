@@ -1,0 +1,212 @@
+/* Título com fundo gradiente ocupando 100% da largura */
+.title-container {
+    background: linear-gradient(135deg, #ff4e50 0%, #1f1c18 100%);
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.title-container h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Seção Trabalhe Conosco */
+#job-in {
+    background: #ffffff; 
+    padding: 50px 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Formulário centralizado */
+#curriculoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+}
+
+/* Contêiner do campo com tamanho ajustado ao conteúdo */
+.custom-form-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%; 
+    max-width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Ícones nos campos de input */
+.custom-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #d90000;
+}
+
+/* Estilo específico para os inputs com borda gradiente */
+.custom-form-control {
+    padding-left: 45px; 
+    background: #ffffff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #333;
+    border: 2px solid #700303a8;
+    width: 100%; 
+    height: 50px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de foco nos inputs */
+.custom-form-control:focus {
+    box-shadow: 0 0 8px rgba(255, 78, 80, 0.5);
+    border-color: #ff4e50;
+}
+
+/* Botão de envio com borda e gradiente */
+.btn-primary {
+    background-image: linear-gradient(90deg, #464242, #5f0101);
+    border: none;
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    color: #fff;
+    width: 100%;
+    max-width: auto;
+    transition: background-image 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(90deg, #ff0303, #ff4e50);
+}
+
+/* Nome do arquivo selecionado */
+.file-name {
+    color: #d90000;
+    font-style: italic;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff4e50;
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #ff4e50;
+}
+
+.custom-form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Ícone no contêiner de upload */
+.custom-form-icon {
+    font-size: 1.5rem;
+    color: #d90000;
+    margin-right: 10px;
+}
+
+/* Estilo do contêiner de upload */
+.file-upload-wrapper {
+    flex: 1;
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+/* Input de arquivo invisível */
+.custom-file-input {
+    display: none;
+}
+
+/* Estilo do nome do arquivo */
+.file-name {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Estilo do botão de escolher arquivo com gradiente */
+.upload-button {
+    background-image: linear-gradient(90deg, #ff4e50, #d90000);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.upload-button:hover {
+    background-image: linear-gradient(90deg, #d90000, #ff4e50);
+}
+
+.upload-button i {
+    margin-right: 5px;
+}
+
+/* Estilo do ícone de remoção de arquivo */
+.remove-file-icon {
+    font-size: 1rem;
+    color: #d90000;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline;
+}
+
+.file-upload-wrapper:hover .remove-file-icon {
+    color: #ff4e50;
+}

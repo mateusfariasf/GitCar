@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GitCAR - Trabalhe Conosco</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome Importação -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/style_tb.css">
+        <link rel="shortcut icon" type="image/png" href="../icon/GITCAR - Copia.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    </head>        
+<body>
+
+    <header> 
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar-itens">
+            <a class="navbar-brand" href="main.html"><img src="/icon/GITCAR - Cut.png" alt="Gitcar" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-bg-white" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./agendamento.html">Agendamento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./seguradoras.html">Seguradoras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./trabalhe_conosco.html">Trabalhe Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+    
+    <div class="title-container font-weight-bold">
+        <h1>Trabalhe Conosco</h1>
+    </div>
+    
+    <section id="job-in" class="py-5">
+        <div class="container">
+            <p class="text-center text-dark">Envie seu currículo e faça parte do nosso time!</p>
+
+            <!-- Formulário centralizado -->
+            <form id="curriculoForm" enctype="multipart/form-data" class="form-data mw-100">
+                <div class="custom-form-group">
+                    <i class="fas fa-user custom-form-icon"></i>
+                    <input type="text" class="custom-form-control" id="nome" placeholder="Nome Completo" required>
+                </div>
+                <div class="custom-form-group">
+                    <i class="fas fa-envelope custom-form-icon"></i>
+                    <input type="email" class="custom-form-control" id="email" placeholder="E-mail" required>
+                </div>
+                <div class="custom-form-group">
+                    <i class="fas fa-phone custom-form-icon"></i>
+                    <input type="tel" class="custom-form-control" id="telefone" placeholder="Telefone" required>
+                </div>
+                <div class="custom-form-group">
+                    <i class="fas fa-briefcase custom-form-icon"></i>
+                    <select id="cargo" class="custom-form-control" required>
+                        <option value="" disabled selected>Selecione o tipo de cargo</option>
+                        <option value="Mecânico">Mecânico</option>
+                        <option value="Eletricista">Eletrô-Técnico</option>
+                        <option value="Pintor">Pintor</option>
+                        <option value="Borracheiro">Borracheiro</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+                <div class="custom-form-group">
+                    <i class="fas fa-file-upload custom-form-icon"></i>
+                    <div class="file-upload-wrapper">
+                        <input type="file" class="custom-file-input" id="curriculo" placeholder="Nenhum arquivo selecionado"  accept=".pdf,.doc,.docx" required>
+                        <span class="file-name" id="file-name">Nenhum arquivo selecionado</span>
+                        <i class="fa-solid fa-times remove-file-icon" id="remove-file" style="display: none;" onclick="removeFile()"></i>
+                    </div>
+                    <button type="button" class="upload-button" onclick="document.getElementById('curriculo').click();">
+                        <i class="fa-solid fa-file-import"></i> Escolher Arquivo
+                    </button>
+                </div>  
+                <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Enviar Currículo</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <a class="navbar-brand" href="main.html"><img src="/icon/GITCAR.png" alt="Gitcar" style="height: 200px;"></a>
+                <div class="col-md-3">
+                    <h5>Mapa do site</h5>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="agendamento.html">Agendamento</a></li>
+                        <li><a href="seguradoras.html">Seguradoras</a></li>
+                        <li><a href="serviços.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                   </ul>                
+                </div>
+                <div class="col-md-3">
+                    <h5>Unidades</h5>
+                    <ul>
+                        <li><a href="#">Águas Claras</a></li>
+                        <li><a href="#">Arniqueira</a></li>
+                        <li><a href="#">Asa Sul</a></li>
+                        <li><a href="#">Ceilândia</a></li>
+                        <li><a href="#">Lago Sul</a></li>
+                        <li><a href="#">Samambaia</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes sociais</h5>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                    <p><i class="fas fa-phone-alt"></i> 61 3043-8680</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Todos os direitos reservados por GitCar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/regras.js"></script>
+</body>
+</html>
